@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    background-color: darkgray;
+    border: solid 1px black;
+    padding: 0 10%;
+}
+
+#stuff {
+    padding: 0 10%;
+}
+
+h2 {
+    font-weight: 500;
+    text-decoration: overline underline;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.post {
+    border: solid black 1px;
+    padding: 5px;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+#submitButton {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    transition: background-color .5s;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#submitButton:hover {
+    background-color: gold;
+}
