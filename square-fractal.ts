@@ -22,7 +22,7 @@ let calcNextCenters = (inputCoord: [number, number], distance: number): [number,
 
 let drawSquareFractal = (centerCoord: [number, number], layers: number, size: number): void => {
 
-    console.log('Center coordinate:', centerCoord, 'Layers:', layers, 'Size:', size);
+    // console.log('Center coordinate:', centerCoord, 'Layers:', layers, 'Size:', size);
 
     if (layers > 0) {
         ctx.beginPath();
