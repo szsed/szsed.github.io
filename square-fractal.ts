@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 
-const numberOfLayersSquares: number = 4;
+const numberOfLayersSquares: number = 5;
 const startCoordSquares: [number, number] = [canvas.width / 2, canvas.height / 2];
 const squareSize: number = canvas.width;
 
