@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 
 const numberOfLayersSquares: number = 4;
 const startCoordSquares: [number, number] = [canvas.width / 2, canvas.height / 2];
-const squareSize: number = canvas.width / 2;
+const squareSize: number = canvas.width;
 
 let calcNextCenters = (inputCoord: [number, number], distance: number): [number, number][] => {
     let output: [number, number][] = [];
@@ -23,8 +23,8 @@ let drawSquareFractal = (centerCoord: [number, number], layers: number, size: nu
     console.log('Center coordinate:', centerCoord, 'Layers:', layers, 'Size:', size);
 
     if (layers > 0) {
-        ctx.moveTo(centerCoord[0] - size / 2, centerCoord[1] - size / 2);
         ctx.beginPath();
+        ctx.moveTo(centerCoord[0] - size / 2, centerCoord[1] - size / 2);
         ctx.lineTo(centerCoord[0] + size / 2, centerCoord[1] - size / 2);
         ctx.lineTo(centerCoord[0] + size / 2, centerCoord[1] + size / 2);
         ctx.lineTo(centerCoord[0] - size / 2, centerCoord[1] + size / 2);
