@@ -9,8 +9,6 @@ const numberOfLayersSquares: number = 5;
 const startCoordSquares: [number, number] = [canvas.width / 2, canvas.height / 2];
 const squareSize: number = canvas.width;
 
-console.log(canvas.width, squareSize);
-
 let calcNextCenters = (inputCoord: [number, number], distance: number): [number, number][] => {
     let output: [number, number][] = [];
     output.push([inputCoord[0], inputCoord[1] + distance]);
