@@ -11,9 +11,10 @@ const circleRadius: number = canvas.width / 2;
 
 let calcNextCenters = (inputCoord: [number, number], inputRadius: number): [number, number][] => {
     let output: [number, number][] = [];
+    let pythagoras: number = (inputRadius ** 2 - (inputRadius / 2) ** 2) ** 0.5
     output.push([inputCoord[0], inputCoord[1] - inputRadius / 2]);
-    output.push([inputCoord[0] + inputRadius / 2, inputCoord[1] + inputRadius / 2]);
-    output.push([inputCoord[0] - inputRadius / 2, inputCoord[1] + inputRadius / 2]);
+    output.push([inputCoord[0] + inputRadius / 2, inputCoord[1] + pythagoras]);
+    output.push([inputCoord[0] - inputRadius / 2, inputCoord[1] + pythagoras]);
     return output;
 }
 
