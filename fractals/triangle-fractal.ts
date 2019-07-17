@@ -12,8 +12,8 @@ const triangleSize: number = canvas.width;
 let calcNextToplefts = (inputCoord: [number, number], inputSize: number): [number, number][] => {
     let output: [number, number][] = [];
     output.push([inputCoord[0], inputCoord[1]]);
-    output.push([inputCoord[0] + inputSize / 2, inputCoord[1]]);
-    output.push([inputCoord[0] + inputSize / 4, inputCoord[1] + inputSize * 3 ** 0.5 / 4]);
+    // output.push([inputCoord[0] + inputSize / 2, inputCoord[1]]);
+    // output.push([inputCoord[0] + inputSize / 4, inputCoord[1] + inputSize * 3 ** 0.5 / 4]);
     return output;
 }
 
