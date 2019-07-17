@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 
 // DO NOT TOUCH THE CODE ABOVE THIS LINE
 
-const numberOfLayersTriangles: number = 6;
+const numberOfLayersTriangles: number = 7;
 const startCoordTriangles: [number, number] = [0, 0];
 const triangleSize: number = canvas.width;
 
