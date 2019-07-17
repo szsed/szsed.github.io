@@ -23,7 +23,7 @@ let drawCircleFractal = (startCoord: [number, number], layers: number, size: num
         ctx.beginPath();
         ctx.arc(startCoord[0], startCoord[1], size, 0, Math.PI * 2);
         ctx.stroke();
-        calcNextToplefts(startCoord, size / 2).forEach((element) => drawCircleFractal(element, layers - 1, size / 2));
+        calcNextToplefts(startCoord, size).forEach((element) => drawCircleFractal(element, layers - 1, size / 2));
     }
 }
 

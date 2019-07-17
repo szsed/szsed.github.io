@@ -28,7 +28,7 @@ let drawTriangleFractal = (startCoord: [number, number], layers: number, size: n
         ctx.lineTo(startCoord[0] + size / 2, startCoord[1] + size * 3 ** 0.5 / 2);
         ctx.closePath();
         ctx.stroke();
-        calcNextToplefts(startCoord, size / 2).forEach((element) => drawTriangleFractal(element, layers - 1, size / 2));
+        calcNextToplefts(startCoord, size).forEach((element) => drawTriangleFractal(element, layers - 1, size / 2));
     }
 }
 
