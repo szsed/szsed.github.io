@@ -32,7 +32,7 @@ let drawHexFractal = (centerCoord: [number, number], layers: number, size: numbe
         ctx.lineTo(centerCoord[0] - size, centerCoord[1]);
         ctx.closePath();
         ctx.stroke();
-        calcNextCenters(centerCoord, size / 3).forEach((element) => drawHexFractal(element, layers - 1, size / 2));
+        calcNextCenters(centerCoord, size / 2).forEach((element) => drawHexFractal(element, layers - 1, size / 2));
     }
 }
 
